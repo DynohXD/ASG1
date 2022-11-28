@@ -1,6 +1,3 @@
-<body>
-    
-</body>
 <html>
   <head>
     <nav>
@@ -9,20 +6,90 @@
     
     <meta name="viewport" content="width=device-width">
     <style>
-    	#heading{
-    		background-color: grey;
-    		color: white;
-    	}
+    	.header {
+        display: flex;
+        padding: 0px;
+        height: 110px;
+        text-align: center;
+        background: #0e0e0e;
+        color: white;
+      }
+
+      .img1{
+        width: 196px;
+        height: auto;
+        display:block;
+      }
+
+      .img2{
+        width: 400px;
+        height: auto;
+        display: block;
+      }
+
+      .navbar {
+        display: flex;
+        background-color: black;
+      }
+
+      /*NavBar Looks*/
+      .navbar a {
+        color: #ca0d0f;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .navbar b {
+        color: #dfbd24;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .navbar c {
+        color: #20bfc0;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      .navbar d {
+        color: #6f11ae;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      /*NavBar Hover*/
+      .navbar a:hover {
+        color: white;
+        font-size: 20px;
+        font-weight: var(--bold);
+      }
+      
+
+      /*Remove white border*/
+      .web-border {
+        margin: 0px;
+      }
     </style>
   </head>
 
-  <body>
-    <div>
-        <header id="heading">
-        <h1>Name Of Band</h1>
-        <p>
-            testing header
-        </p>
+  <body class="web-border">
+    <!-- Header -->
+    <div class="header">
+      <img src="https://wallpapercave.com/wp/wp2401139.jpg"
+      class="img1"
+      alt="Imagine Dragons LOGO">
+      <img src="https://i.pinimg.com/originals/a6/2d/15/a62d15d94af3043714be50d143ffb657.jpg" 
+      class="img2" 
+      alt="IMAGINE DRAGONS LOGO by Hakay22 on DeviantArt">
+    </div>
+
+    <!-- NavBar-->
+    <div class="navbar">
+      <a href="#">About</a>
+      <b href="#">Merchandise</b>
+      <c href="#">Awards</c>
+      <d href="#">Book Tickets</d>
     </div>
   </body>
 </html>
