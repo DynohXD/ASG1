@@ -1,3 +1,9 @@
+/*Remove white border*/
+.web-border {
+    margin: 0px;
+    }
+
+/*Header FlexBox*/
 .header {
     display: flex;
     padding: 0px;
@@ -19,33 +25,34 @@
     display: block;
     }
 
-.navbar {
-    display: flex;
-    background-color: black;
-    }
-
 /*NavBar Looks*/
+.navbar {
+    font-size: 22px;
+    height: 32px;
+    background-color: black;
+    font-family: 'Rubik Glitch', cursive;
+    }
 .navbar a {
     color: #ca0d0f;
-    padding: 14px 20px;
+    padding: 14px 60px;
     text-decoration: none;
     text-align: center;
     }
 .navbar b {
     color: #dfbd24;
-    padding: 14px 20px;
+    padding: 14px 10px;
     text-decoration: none;
     text-align: center;
     }
 .navbar c {
     color: #20bfc0;
-    padding: 14px 20px;
+    padding: 14px 60px;
     text-decoration: none;
     text-align: center;
     }
 .navbar d {
     color: #6f11ae;
-    padding: 14px 20px;
+    padding: 14px 10px;
     text-decoration: none;
     text-align: center;
     }
@@ -72,7 +79,38 @@
     font-weight: var(--bold);
     }     
 
-/*Remove white border*/
-.web-border {
-    margin: 0px;
+/*Body*/
+.body {
+    display: flex;
+    padding: 0px;
+    height: 600px;
     }
+.img3{
+    width:100%;
+    height: auto;
+    display: block;
+    }
+.tstyle{
+    font-family: 'Anton', sans-serif;
+}
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
