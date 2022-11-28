@@ -1,0 +1,78 @@
+.header {
+    display: flex;
+    padding: 0px;
+    height: 110px;
+    text-align: center;
+    background: #0e0e0e;
+    color: white;
+    }
+
+.img1{
+    width: 196px;
+    height: auto;
+    display:block;
+    }
+
+.img2{
+    width: 400px;
+    height: auto;
+    display: block;
+    }
+
+.navbar {
+    display: flex;
+    background-color: black;
+    }
+
+/*NavBar Looks*/
+.navbar a {
+    color: #ca0d0f;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    }
+.navbar b {
+    color: #dfbd24;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    }
+.navbar c {
+    color: #20bfc0;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    }
+.navbar d {
+    color: #6f11ae;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    }
+
+/*NavBar Hover*/
+.navbar a:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: var(--bold);
+    }
+.navbar b:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: var(--bold);
+    }
+.navbar c:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: var(--bold);
+    }
+.navbar d:hover {
+    color: white;
+    font-size: 20px;
+    font-weight: var(--bold);
+    }     
+
+/*Remove white border*/
+.web-border {
+    margin: 0px;
+    }
