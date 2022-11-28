@@ -5,6 +5,7 @@
 
 /*Header FlexBox*/
 .header {
+    width: 100%;
     display: flex;
     padding: 0px;
     height: 110px;
@@ -27,10 +28,11 @@
 
 /*NavBar Looks*/
 .navbar {
+    width: 100%;
     font-size: 22px;
     height: 32px;
     background-color: black;
-    font-family: 'Rubik Glitch', cursive;
+    font-family: 'Secular One', sans-serif;
     }
 .navbar a {
     color: #ca0d0f;
@@ -90,9 +92,6 @@
     height: auto;
     display: block;
     }
-.tstyle{
-    font-family: 'Anton', sans-serif;
-}
 
 /*Scrollbar*/
 /* width */
