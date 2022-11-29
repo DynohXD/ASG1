@@ -36,7 +36,19 @@ header.sticky{
     background: #0e0e0e;
 }
 
-header .logo{
+
+#logo1{
+    width: 196px;
+    height: auto;
+    display:block;
+
+}
+
+header.logo1{
+    display: block;
+}
+
+header .logo2{
     position: relative;
     width: 300px;
     height: auto;
@@ -62,7 +74,7 @@ header ul li1 a:after{
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    /*transition: 0.3s*/;
 }
 header ul li2 a:after{
     content: "";
@@ -72,7 +84,7 @@ header ul li2 a:after{
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    /*transition: 0.3s*/;
 }
 header ul li3 a:after{
     content: "";
@@ -82,7 +94,7 @@ header ul li3 a:after{
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    /*transition: 0.3s*/;
 }
 header ul li4 a:after{
     content: "";
@@ -92,7 +104,7 @@ header ul li4 a:after{
     width: 0;
     left: 0;
     bottom: -10px;
-    transition: 0.3s;
+    /*transition: 0.3s*/;
 }
 header ul a{
     font-size: 20px;
@@ -137,3 +149,35 @@ header.sticky .logo,
 header.sticky ul li a{
     color: #fff;
 }
+
+/* Band Member Names*/
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-family: 'Alfa Slab One', cursive;  
+    color: white;
+    font-size: 30px;
+}
+
+.hide{
+    display: none;
+}
+
+section p1:hover + .hide{
+    display: block;
+    color: #ca0d0f;
+    }
+section p2:hover + .hide{
+    display: block;
+    color: #dfbd24;
+    }
+section p3:hover + .hide{
+    display: block;
+    color: #20bfc0;
+    }
+section p4:hover + .hide{
+    display: block;
+    color: #6f11ae;
+    }
