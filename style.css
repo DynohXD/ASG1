@@ -1,115 +1,139 @@
-/*Remove white border*/
-.web-border {
-    margin: 0px;
-    }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alfa Slab One', cursive; 
+}
 
-/*Header FlexBox*/
-.header {
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    min-height: 100vh;
+}
+
+/*Header variables*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
-    padding: 0px;
-    height: 110px;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 40px;
+    z-index: 100000;
+}
+
+header.sticky{
+    padding: 5px 100px;
     background: #0e0e0e;
-    color: white;
-    }
+}
 
-.img1{
-    width: 196px;
-    height: auto;
-    display:block;
-    }
-
-.img2{
-    width: 400px;
+header .logo{
+    position: relative;
+    width: 300px;
     height: auto;
     display: block;
-    }
+    transition: 0.6s;
+}
 
-/*NavBar Looks*/
-.navbar {
-    width: 100%;
-    font-size: 22px;
-    height: 32px;
-    background-color: black;
-    font-family: 'Secular One', sans-serif;
-    }
-.navbar a {
-    color: #ca0d0f;
-    padding: 14px 60px;
-    text-decoration: none;
-    text-align: center;
-    }
-.navbar b {
-    color: #dfbd24;
-    padding: 14px 10px;
-    text-decoration: none;
-    text-align: center;
-    }
-.navbar c {
-    color: #20bfc0;
-    padding: 14px 60px;
-    text-decoration: none;
-    text-align: center;
-    }
-.navbar d {
-    color: #6f11ae;
-    padding: 14px 10px;
-    text-decoration: none;
-    text-align: center;
-    }
-
-/*NavBar Hover*/
-.navbar a:hover {
-    color: white;
-    font-size: 20px;
-    font-weight: var(--bold);
-    }
-.navbar b:hover {
-    color: white;
-    font-size: 20px;
-    font-weight: var(--bold);
-    }
-.navbar c:hover {
-    color: white;
-    font-size: 20px;
-    font-weight: var(--bold);
-    }
-.navbar d:hover {
-    color: white;
-    font-size: 20px;
-    font-weight: var(--bold);
-    }     
-
-/*Body*/
-.body {
+header ul{
+    position: relative;
     display: flex;
-    padding: 0px;
-    height: 600px;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li1 a:after{
+    content: "";
+    position: absolute;
+    background-color: #ca0d0f;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header ul li2 a:after{
+    content: "";
+    position: absolute;
+    background-color: #dfbd24;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header ul li3 a:after{
+    content: "";
+    position: absolute;
+    background-color: #20bfc0;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header ul li4 a:after{
+    content: "";
+    position: absolute;
+    background-color: #6f11ae;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+header ul a{
+    font-size: 20px;
+    position: relative;
+    margin: 0 25px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Hover Effects and Animation*/
+header ul li1 a:hover {
+    color: #ca0d0f;
+    font-weight: var(--bold);
     }
-.img3{
-    width:100%;
-    height: auto;
-    display: block;
+header ul li2 a:hover {
+    color: #dfbd24;
+    font-weight: var(--bold);
+    }
+header ul li3 a:hover {
+    color: #20bfc0;
+    font-weight: var(--bold);
+    }
+header ul li4 a:hover {
+    color: #6f11ae;
+    font-weight: var(--bold);
     }
 
-/*Scrollbar*/
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+header ul a:hover:after {
+    width: 100%;
+    }
+
+/*Background Band Photo*/
+.banner{
+    position: 100px;
+    width: 100%;
+    height: 100vh;
+    background: url(https://s1.ticketm.net/dam/a/c90/67a18d21-394f-4afe-84f9-15560d797c90_1652911_TABLET_LANDSCAPE_LARGE_16_9.jpg);
+    background-size: cover;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #fff;
+}
