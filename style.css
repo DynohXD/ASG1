@@ -168,16 +168,24 @@ section{
 section p1:hover + .hide{
     display: block;
     color: #ca0d0f;
+    width: 400px;
+    height:auto;
     }
 section p2:hover + .hide{
     display: block;
     color: #dfbd24;
+    width: 400px;
+    height:auto;
     }
 section p3:hover + .hide{
     display: block;
     color: #20bfc0;
+    width: 400px;
+    height:auto;
     }
 section p4:hover + .hide{
     display: block;
     color: #6f11ae;
+    width: 400px;
+    height:auto;
     }
