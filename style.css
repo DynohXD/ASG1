@@ -167,25 +167,101 @@ section{
 
 section p1:hover + .hide{
     display: block;
-    color: #ca0d0f;
     width: 400px;
     height:auto;
     }
 section p2:hover + .hide{
     display: block;
-    color: #dfbd24;
     width: 400px;
     height:auto;
     }
 section p3:hover + .hide{
     display: block;
-    color: #20bfc0;
     width: 400px;
     height:auto;
     }
 section p4:hover + .hide{
     display: block;
-    color: #6f11ae;
     width: 400px;
     height:auto;
+    }
+
+.rounded-button1 {
+    width: 60px;
+    height: 60px;
+    background: red;
+    color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+    }
+      
+.rounded-button1:hover {
+    background: #00866c;
+    }
+
+.rounded-button2 {
+    width: 60px;
+    height: 60px;
+    background: lightskyblue;
+    color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+    }
+          
+.rounded-button2:hover {
+    background: #00866c;
+    }
+
+.rounded-button3 {
+    width: 60px;
+    height: 60px;
+    background: blue;
+    color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+    }
+          
+.rounded-button3:hover {
+    background: #00866c;
+    }
+
+.rounded-button4 {
+    width: 60px;
+    height: 60px;
+    background: green;
+    color: #ffffff;
+    font-size: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    transition: background 0.2s;
+    }
+          
+.rounded-button4:hover {
+    background: #00866c;
     }

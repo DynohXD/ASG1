@@ -50,12 +50,31 @@
             class="hide" 
             alt="img4">
 
+      <br>
+
       <ul>
-        <liy><a href="#">Youtube</a></liy>
-        <lit><a href="#">Twitter</a></lit>
-        <lif><a href="#">Facebook</a></lif>
-        <lis><a href="#">Spotify</a></lis>
+        <liy>
+          <button class="rounded-button1" type="button">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </button>
+        </liy>
+        <lit>
+          <button class="rounded-button2" type="button">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </button>
+        </lit>
+        <lif>
+          <button class="rounded-button3" type="button">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </button>
+        </lif>
+        <lis>
+          <button class="rounded-button4" type="button">
+            <ion-icon name="filter-circle-outline"></ion-icon>
+          </button>
+        </lis>
       </ul>
+
     </section>
       
       
@@ -64,7 +83,9 @@
         var header = document.querySelector("header");
         header.classList.toggle("sticky", window.scrollY > 0)
       })
-      
     </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>
