@@ -14,7 +14,6 @@
 
 body{
     background: #000;
-    min-height: 100vh;
 }
 
 /*Header variables*/
@@ -42,10 +41,6 @@ header.sticky{
     height: auto;
     display:block;
 
-}
-
-header.logo1{
-    display: block;
 }
 
 header .logo2{
@@ -152,6 +147,7 @@ header.sticky ul li a{
 
 /* Band Member Names*/
 section{
+    padding: 10px;
     display: grid;
     place-items: center;
     align-content: center;
@@ -164,24 +160,39 @@ section{
 .hide{
     display: none;
 }
-
+section p1:hover{
+    color: #ca0d0f;
+}
+section p2:hover{
+    color: #dfbd24;
+}
+section p3:hover{
+    color: #20bfc0;
+}
+section p4:hover{
+    color: #6f11ae;
+}
 section p1:hover + .hide{
     display: block;
+    border-radius: 10%;
     width: 400px;
     height:auto;
     }
 section p2:hover + .hide{
     display: block;
+    border-radius: 10%;
     width: 400px;
     height:auto;
     }
 section p3:hover + .hide{
     display: block;
+    border-radius: 10%;
     width: 400px;
     height:auto;
     }
 section p4:hover + .hide{
     display: block;
+    border-radius: 10%;
     width: 400px;
     height:auto;
     }
@@ -189,7 +200,7 @@ section p4:hover + .hide{
 .rounded-button1 {
     width: 60px;
     height: 60px;
-    background: red;
+    background: #ca0d0f;
     color: #ffffff;
     font-size: 30px;
     display: inline-flex;
@@ -265,3 +276,100 @@ section p4:hover + .hide{
 .rounded-button4:hover {
     background: #00866c;
     }
+
+
+/*Shop*/
+.shop-container {
+	display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 30px;
+	}
+
+.flex-item {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    flex-direction: column;
+    border: 4px solid white;
+    border-radius: 15%;
+    background-color: #0e0e0e;
+    }
+
+.flex-item:hover {
+    border: 8px solid #0e0e0e;
+    color: black;
+    border-radius: 20%;
+    background-color: white;
+    }
+
+.flex-img img {
+    max-width: 100%;
+    border-radius: 15%;
+    }
+
+.flex-info {
+    align-content: center;
+    margin-top: auto;
+    display: grid;
+    place-items: center;
+    }
+
+.about-content{
+    background-color: #00866c;
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 30px;
+    flex-direction: column;
+    font-size: 30px;
+    color: #000;
+}
+.achievements{
+    color: #000;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+.button4 {
+    color: black;
+    border: 2px solid #e7e7e7;
+  }
+  
+.button4:hover {
+    background-color: grey;
+    color: white;
+    padding: 30px 70px;
+    transition: 0.3s;
+}
+
+.ending{
+    display: flex;
+    height: 100px;
+    background-color: white;
+    padding: 10px 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    color: black;
+}
