@@ -35,14 +35,6 @@ header.sticky{
     background: #0e0e0e;
 }
 
-
-#logo1{
-    width: 196px;
-    height: auto;
-    display:block;
-
-}
-
 header .logo2{
     position: relative;
     width: 300px;
@@ -321,7 +313,7 @@ section p4:hover + .hide{
     }
 
 .about-content{
-    background-color: #00866c;
+    background-color: #ca0d0f;
     display: flex;
     align-content: center;
     justify-content: flex-start;

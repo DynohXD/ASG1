@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alfa Slab One', cursive; 
+}
+
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 10px 40px;
+    z-index: 100000;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #0e0e0e;
+}
+
+header.sticky .logo,
+header.sticky ul li a{
+    color: #fff;
+}
+
+header .logo1{
+    position: relative;
+    width: 300px;
+    height: auto;
+    display: block;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li1 a:after{
+    content: "";
+    position: absolute;
+    background-color: #ca0d0f;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    /*transition: 0.3s*/;
+}
+header ul li2 a:after{
+    content: "";
+    position: absolute;
+    background-color: #dfbd24;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    /*transition: 0.3s*/;
+}
+header ul li3 a:after{
+    content: "";
+    position: absolute;
+    background-color: #20bfc0;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    /*transition: 0.3s*/;
+}
+header ul li4 a:after{
+    content: "";
+    position: absolute;
+    background-color: #6f11ae;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    /*transition: 0.3s*/;
+}
+header ul a{
+    font-size: 20px;
+    position: relative;
+    margin: 0 25px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Hover Effects and Animation*/
+header ul li1 a:hover {
+    color: #ca0d0f;
+    font-weight: var(--bold);
+    }
+header ul li2 a:hover {
+    color: #dfbd24;
+    font-weight: var(--bold);
+    }
+header ul li3 a:hover {
+    color: #20bfc0;
+    font-weight: var(--bold);
+    }
+header ul li4 a:hover {
+    color: #6f11ae;
+    font-weight: var(--bold);
+    }
+
+header ul a:hover:after {
+    width: 100%;
+    }
+
+.banner{
+    position: 100px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    }
+
+section{
+    padding: 0px;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+    font-family: 'Alfa Slab One', cursive;  
+    color: white;
+    font-size: 30px;
+    }
+
+iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+}
+
+.music-buy{
+    display: grid;
+    color: white;
+}
+
+.music-container{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    color: white;
+    background-color: #20bfc0;
+}
+.flex-item {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    flex-direction: column;
+    border: 4px solid white;
+    border-radius: 15%;
+    background-color: #0e0e0e;
+    height: 350px;
+    }
+
+.flex-item:hover {
+    border: 8px solid #0e0e0e;
+    color: black;
+    border-radius: 20%;
+    background-color: white;
+    }
+
+.flex-img img {
+    max-width: 100%;
+    border-radius: 15%;
+    }
+
+.flex-info {
+    align-content: center;
+    margin-top: auto;
+    display: grid;
+    place-items: center;
+    font-size: 22px;
+    }
+
+.ending{
+    display: flex;
+    height: 100px;
+    background-color: white;
+    padding: 10px 40px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    color: black;
+    }
+
